@@ -1,3 +1,4 @@
+// Merci & Bravo à GaetanC pour ce code !
 // L'utilisation d'une class et la parallélisation du mouvement des bras est librement inspiré de ce tuto
 // expliquant comme paralléliser de multiples actions
 // https://learn.adafruit.com/multi-tasking-the-arduino-part-1/overview
