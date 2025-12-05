@@ -1,15 +1,1 @@
-```markdown
-# Télécharger le logiciel Arduino
-
-Option Markdown (simple et propre) :
-
-[Télécharger le logiciel Arduino (site officiel)](https://www.arduino.cc/en/software/)
-
-Option HTML (si vous avez besoin d'attributs) :
-
 <a href="https://www.arduino.cc/en/software/" target="_blank" rel="noopener">Télécharger le logiciel Arduino (site officiel)</a>
-
-URL brute (collez telle quelle) :
-
-https://www.arduino.cc/en/software/
-```
