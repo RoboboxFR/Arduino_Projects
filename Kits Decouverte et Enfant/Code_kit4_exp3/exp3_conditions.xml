@@ -1,0 +1,116 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_if" id="2Mi=%4P1a*Xk5AiV!/`C" x="163" y="49">
+    <value name="IF0">
+      <block type="logic_compare" id="e~wIHZ~gb.g[O]`o`.b/">
+        <field name="OP">GT</field>
+        <value name="A">
+          <block type="io_analogread" id="es+*SRh?G|;5?Nk7GEQm">
+            <field name="PIN">A0</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="math_number" id="!rWhuM9_B+1o-v(vg*lQ">
+            <field name="NUM">512</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block type="io_digitalwrite" id="zl6,W9.bN2u^RgVXPM[q">
+        <field name="PIN">12</field>
+        <value name="STATE">
+          <block type="io_highlow" id="X;Qd^H5R,#+3dQn^gfHm">
+            <field name="STATE">HIGH</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <next>
+      <block type="controls_if" id="Ho/XYg+m5D9sf(bL@x+#">
+        <value name="IF0">
+          <block type="logic_compare" id="-G5wW8KP`WAYIbkCX[R+">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="io_analogread" id="JPOx`B*xamSP}*tLRxS|">
+                <field name="PIN">A0</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="xw))uT+w-MN!?Tv``g1P">
+                <field name="NUM">512</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="io_digitalwrite" id="jltO:m4SvGm_*uaAk1Bs">
+            <field name="PIN">12</field>
+            <value name="STATE">
+              <block type="io_highlow" id="_`0~PdUk@A}jux`-pS;G">
+                <field name="STATE">LOW</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_if" id="AbkSZkI]PXR%l|QIZh(w">
+            <value name="IF0">
+              <block type="logic_compare" id="%]+XouzZ]kdb{,0D@8l?">
+                <field name="OP">GT</field>
+                <value name="A">
+                  <block type="io_analogread" id="SI=o?Ag5lrcZy_/;^foq">
+                    <field name="PIN">A0</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="9YpIfnVm7~n`71]c{G??">
+                    <field name="NUM">512</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="io_digitalwrite" id="Krf)KH^+8;uvhCZv~/hU">
+                <field name="PIN">11</field>
+                <value name="STATE">
+                  <block type="io_highlow" id="bL+3**gP,WS`kN~z1NEO">
+                    <field name="STATE">HIGH</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id="e~::eXI0nuK`!{SZ:SEx">
+                <value name="IF0">
+                  <block type="logic_compare" id="L)8)!9afCEUc]Cz@Ze`b">
+                    <field name="OP">LT</field>
+                    <value name="A">
+                      <block type="io_analogread" id="W}E%{oC7b;Qvv@Hxa7+l">
+                        <field name="PIN">A0</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="/fD.#wj`!0+X[~6NkqXa">
+                        <field name="NUM">512</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="io_digitalwrite" id="JCAp5.+5#`Sf1?+!b_{h">
+                    <field name="PIN">11</field>
+                    <value name="STATE">
+                      <block type="io_highlow" id="QVMyP%=H`aAQCq%Vli)D">
+                        <field name="STATE">LOW</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

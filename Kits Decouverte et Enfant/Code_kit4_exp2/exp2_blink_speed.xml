@@ -1,0 +1,118 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="variables_set" id="q.h#%uS-f648~4dm*[zT" x="409" y="233">
+    <field name="VAR">potentiometre</field>
+    <value name="VALUE">
+      <block type="io_analogread" id="xk~?NcAAk=PVU)rMTDL|">
+        <field name="PIN">A5</field>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="1B*-AFxf0Hw}%E/HufCU">
+        <field name="VAR">potentiometre</field>
+        <value name="VALUE">
+          <block type="math_arithmetic" id="Bt1Hb/|*;Zcgf[c*j|e1">
+            <field name="OP">MULTIPLY</field>
+            <value name="A">
+              <block type="variables_get" id="XA(rh4g||v[P6..:Z~Yo">
+                <field name="VAR">potentiometre</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="#+!p:xIr})Mk3UzCieXd">
+                <field name="NUM">2</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="io_digitalwrite" id="-Fy5wD~2h/zrgUi1^`x]">
+            <field name="PIN">12</field>
+            <value name="STATE">
+              <block type="io_highlow" id="*SUy3aNuZ}Fm?Z~1O,Ln">
+                <field name="STATE">HIGH</field>
+              </block>
+            </value>
+            <next>
+              <block type="io_digitalwrite" id="|+;~`bJF6!/oA3?Au!PL">
+                <field name="PIN">8</field>
+                <value name="STATE">
+                  <block type="io_highlow" id="s4FDzKQDObyOQ,Unt7aO">
+                    <field name="STATE">HIGH</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="time_delay" id="O|B4C?[)DnG0_UxNY45R">
+                    <value name="DELAY_TIME_MILI">
+                      <block type="variables_get" id="[4]ehtaYh04QNaw8smrI">
+                        <field name="VAR">potentiometre</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="variables_set" id="-Tq;T7!b?MBxY5*7#{Ap">
+                        <field name="VAR">potentiometre</field>
+                        <value name="VALUE">
+                          <block type="io_analogread" id="{,,@eXF7HuU4IWF.#^!`">
+                            <field name="PIN">A5</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="variables_set" id="2MZ~{:XiD%q.5gF:]T}Q">
+                            <field name="VAR">potentiometre</field>
+                            <value name="VALUE">
+                              <block type="math_arithmetic" id="LY@=?4;^Z@[1WI2K9kys">
+                                <field name="OP">MULTIPLY</field>
+                                <value name="A">
+                                  <block type="variables_get" id="b;B+mnm:7(te%#x/K6,K">
+                                    <field name="VAR">potentiometre</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_number" id="m|y9@mU+Ii*#Ss1xS;F3">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="io_digitalwrite" id="RzK=9pyu;.(1#0,Dd;_w">
+                                <field name="PIN">12</field>
+                                <value name="STATE">
+                                  <block type="io_highlow" id="U+LNcPhc@RXK_{wT(xWM">
+                                    <field name="STATE">LOW</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="io_digitalwrite" id="c2JKFPO2*j7y?C#,)Yj2">
+                                    <field name="PIN">8</field>
+                                    <value name="STATE">
+                                      <block type="io_highlow" id="b0!q~-|C4f6xn~zpI{N@">
+                                        <field name="STATE">LOW</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="time_delay" id="f0F+WLy_Ew,9%T8on)M%">
+                                        <value name="DELAY_TIME_MILI">
+                                          <block type="variables_get" id="df)V5#z13;r8-/t{[W?J">
+                                            <field name="VAR">potentiometre</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

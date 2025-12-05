@@ -1,0 +1,58 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="io_digitalwrite" id="-Fy5wD~2h/zrgUi1^`x]" x="63" y="31">
+    <field name="PIN">12</field>
+    <value name="STATE">
+      <block type="io_highlow" id="*SUy3aNuZ}Fm?Z~1O,Ln">
+        <field name="STATE">HIGH</field>
+      </block>
+    </value>
+    <next>
+      <block type="io_digitalwrite" id="|+;~`bJF6!/oA3?Au!PL">
+        <field name="PIN">8</field>
+        <value name="STATE">
+          <block type="io_highlow" id="s4FDzKQDObyOQ,Unt7aO">
+            <field name="STATE">HIGH</field>
+          </block>
+        </value>
+        <next>
+          <block type="time_delay" id="O|B4C?[)DnG0_UxNY45R">
+            <value name="DELAY_TIME_MILI">
+              <block type="math_number" id="#OQFy}NH%g3PB!;{-ak3">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
+            <next>
+              <block type="io_digitalwrite" id="RzK=9pyu;.(1#0,Dd;_w">
+                <field name="PIN">12</field>
+                <value name="STATE">
+                  <block type="io_highlow" id="U+LNcPhc@RXK_{wT(xWM">
+                    <field name="STATE">LOW</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="io_digitalwrite" id="c2JKFPO2*j7y?C#,)Yj2">
+                    <field name="PIN">8</field>
+                    <value name="STATE">
+                      <block type="io_highlow" id="b0!q~-|C4f6xn~zpI{N@">
+                        <field name="STATE">LOW</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="time_delay" id="f0F+WLy_Ew,9%T8on)M%">
+                        <value name="DELAY_TIME_MILI">
+                          <block type="math_number" id="rswYL(*lsKwgMWo#u(WA">
+                            <field name="NUM">1000</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
